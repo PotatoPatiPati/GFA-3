@@ -1,0 +1,73 @@
+body {
+    background-color: lightgreen;
+}
+h1 {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 40px;
+}
+ul {
+    list-style-type: square;
+}
+#sto {
+    font-size: 15px;
+    text-align: center;
+}
+#tree {
+    display: flex;
+    padding: 20px;
+    margin-left: 29%;
+    margin-right: 29%;
+    text-align: center;
+    color: black;
+    background-color: beige;
+}
+#tree h3 {
+    font-size: 16px;
+}
+#tree p {
+    font-size: 30px;
+}
+#mango {
+    padding: 50px;
+    margin: 25px;
+    border: solid 1px black;
+    background-color: beige;
+}
+#apple {
+    padding: 50px;
+    margin: 25px;
+    border: solid 1px black;
+    text-align: center;
+    background-color: beige;
+}
+#guava {
+    padding: 50px;
+    margin: 25px;
+    border: solid 1px black;
+    background-color: beige;
+    text-align: center;
+}
+#random {
+    margin-left: 27%;
+}
+#random button {
+    border: solid red;
+    background-color: palevioletred;
+}
+#random button.hover {
+    border: solid red;
+    background-color: palevioletred;
+    color: white;
+}
+.result {
+    text-align: center;
+    margin-top: 50px;
+}
+.result p{
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initia scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Random Number Generator</h1>
+    <div id="sto">
+        <p>The students of Grade 9 decide to plant three trees. They are mango, apple and guava trees.
+        <ul>
+            <li>Mango</li>
+            <li>Apple</li>
+            <li>Guava</li>
+        </ul>
+        The amount of leaves each tree has grown is:
+    </div>
+    <div id="tree">
+        <div id="mango">
+            <h3>Mango</h3>
+            <p id="one">?</p>
+        </div>
+        <div id="apple">
+            <h3>Apple</h3>
+            <p id="two">?</p>
+        </div>
+        <div id="guava">
+            <h3>Guava</h3>
+            <p id="three">?</p>
+        </div>
+    </div>
+    <div id="random">
+        <button onclick="random()" id="random">Start Randomizer</button>
+    </div>
+    <div class="result">
+        <p id="result">Results</p>
+        <p id="result2"></p>
+        <p id="result3"></p>
+    </div>
+
+    <script>
+        function random() {
+            var one = parseInt(Math.random()*20)+1;
+            document.getElementById("one").innerHTML = one;
+            var two = parseInt(Math.random()*20)+1;
+            document.getElementById("two").innerHTML = two;
+            var three = parseInt(Math.random()*20)+1;
+            document.getElementById("three").innerHTML = three;
+            var biggestNum;
+            if (one >= two && one >=three) {
+                biggestNum = one;
+                document.getElementById("result").innerHTML = "Tree that grew the most leaves: Mango (" + one + ")";
+            } else if (two >= one && two >= three) {
+                biggestNum = two;
+                document.getElementById("result").innerHTML = "Tree that grew the most leaves: Apple (" + one + ")";
+            } else if (three >= one && three >= two) {
+                biggestNum = three;
+                documnet.getElementById("result").innerHTML = "Tree that grew the most leaves: Guava (" + one + ")"
+            }
+            var totalMins = two * three;
+            var hours = Math.floor(totalMins/60);
+            var minutes = totalMins % 60;
+            document.getElementById("result3").innerHTML= "The time it took for the leaves to grow (" + totalMins + "mins): "+ hours + "hr " + minutes + "min";
+            let nthLetter = String.fromCharCode(96 + one);
+            document.getElementById("result2").innerHTML="The name of the one who grew the tree with the most leaves starts with the letter: " + nthLetter;
+            }
+    </script>
+</body>
+</html>
